@@ -1,0 +1,274 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Bai Jamjuree";
+}
+
+p{
+    line-height: 1.6;
+    color:hsl(210, 10%, 33%);
+}
+
+header{
+    background-image: url(images/bg-header-desktop.png);
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+    padding-top: 4rem;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+
+header .buttons{
+    background-color: white;
+}
+
+header h1,
+header p{
+    padding: 2rem 0 1.8rem;
+     max-width: 550px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+header p{
+line-height: 1.6;
+text-align: center;
+color: hsl(210, 10%, 33%);
+}
+
+.buttons{
+    text-decoration: none;
+    border: none;
+}
+
+
+.buttons :first-child{
+     box-shadow:
+        0 4px 0 hsl(171, 66%, 34%),
+        0 10px 20px hsla(171, 66%, 44%, 0.3);
+        background-color:  hsl(171, 66%, 44%);
+        border: none;
+        padding: 0.7rem;
+        color: white;
+        border-radius: 50px;
+}
+.buttons :last-child{
+     box-shadow:
+        0 4px 0 hsl(233, 65%, 55%),
+        0 10px 20px hsla(233, 100%, 69%, 0.3);
+        background-color: hsl(233, 100%, 69%);
+        border: none;
+        padding: 0.7rem;
+        color: white;
+        border-radius: 50px;
+}
+
+
+.snippets{
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 4rem  0;
+    max-width: 550px;
+    margin: auto;
+    
+
+}
+
+.snippets h2{
+    padding-bottom: 1rem;
+}
+
+
+
+.tele{
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    align-items: stretch;
+    max-width: 1000px;
+    margin: auto;
+   
+}
+
+.tele .text{
+     display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+
+
+.text div{
+margin: 1.6rem 0;
+}
+
+.devices{
+    padding: 5rem 0 4rem;
+    max-width: 550px;
+margin: auto;
+text-align: center;
+}
+.devices img{
+    padding-top: 2rem;
+}
+.idk{
+max-width: 550px;
+margin: auto;
+text-align: center;
+}
+
+
+.workflow{
+    padding: 4rem 0;
+    display: flex;
+    max-width: 1000px;
+    margin:auto;
+    justify-content: space-around;
+}
+
+.workflow img{
+    margin: 2rem 0;
+}
+
+
+.workflow h3 {
+    margin: 1rem 0;
+}
+
+.workflow div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 30%;
+}
+
+
+.companies{
+    display: flex;
+    justify-content: space-around;
+}
+
+
+.fin{
+    padding: 5rem 0;
+    max-width: 550px;
+    margin: auto;
+    text-align: center;
+
+}
+
+.fin h3{
+    padding: 1rem 0;
+}
+
+.fin .buttons{
+    margin:2rem 0;
+}
+
+
+footer{
+display: flex;
+justify-content: space-between;
+padding:  5rem ;
+background-color: hsl(200, 40%, 94%);
+}
+
+footer:first-child{
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+footer:last-child{
+    align-self: flex-end;
+     margin-top: auto;
+    margin-bottom: auto;
+   
+}
+
+
+.social-media img{
+    margin: 10px;
+}
+footer .grid{
+    display: grid;
+   grid-template-columns: repeat(3 , 1fr);
+}
+
+
+@media ( max-width : 700px){
+    h1{
+        text-align: center;
+
+    }
+    body{
+        width:100vw;
+    }
+    header{
+        padding: 0 1rem;
+    }
+
+    .snippets{
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+    
+    .tele{
+        flex-direction: column;
+        align-items: center;
+        padding: 0 2rem;
+    }
+
+    .tele .text{
+        text-align: center;
+    }
+
+    .workflow{
+       margin: 0;
+       flex-direction: column;
+       align-items: center;
+       
+    }
+
+    .workflow div{
+        width: 60%;
+    }
+
+    .companies{
+        flex-direction: column;
+        align-items: center;
+    }
+    .companies img{
+        padding: 1rem 0;
+        width: 150px;
+    }
+    footer{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+
+    }
+
+    footer .grid{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 2rem;
+        font-size: 1.5rem;
+    }
+    .tele img {
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+}
